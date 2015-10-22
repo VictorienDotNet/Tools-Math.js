@@ -38,23 +38,18 @@ Calculer l’angle, la distance entre deux points ou encore le coefficient direc
 ##Cordonné polaire
 Caculer la position d’un point en fonction de ses coordonnées polaires peut se révéler pratique. Voici donc une série de fonctions qui facilite cette méthode :
 
-1. Initialement le point d’origine se trouve en (0,0) soit dans le coin supérieur gauche de l’écran. Si vous souhaitez modifier la position du point d’origine pour les coordonnées polaire, vous pouvez le faire grâce à cette fonction :
+Initialement le point d’origine se trouve en (0,0) soit dans le coin supérieur gauche de l’écran. Si vous souhaitez modifier la position du point d’origine pour les coordonnées polaire, vous pouvez le faire grâce à cette fonction :
+
 	Math.radial.changeOrigin(x, y)
 
-2. Convertis des coordonnées polaires (angle, rayon) en coordonnées cartésiennes (x, y).
+
+Il est aussi possible de convertis des coordonnées polaires (angle, rayon) en coordonnées cartésiennes (x, y) ou l'inverse
+	
 	Math.radial.toXY(rayon, angle)
+	//coordonnées polaire vers coordonnées cartésiennes
+	//retourne un objet du type {r:number, a:number}
 
-La fonction retourne un objet du type : */
-	{
-		x:number,
-		y:number
-	}
-
-3. Convertis des coordonnées cartésiennes (x, y) en coordonnées polaires (angle, rayon). 
 	Math.radial.toPolar(x,y)
-
-La fonction retourne un objet du type :
-	{
-		r:number,
-		a:number
-	}
+	//coordonnées cartésiennes vers coordonnées polaire
+	////retourne un objet du type {x:number, y:number}
+	
