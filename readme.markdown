@@ -2,6 +2,9 @@
 
 La fonction ‘Math’ en JavaScript se retrouve plus limitée que les possibilités de son coussin le *Processing*. C’est pourquoi ce script ajoute directement à la fonction ‘Math’ des fonctions de calcul courant et bien utile pour le prototypage ou le dessin génératif.
 
+##Ajouter le script
+	<script src="http://link.victorien.net/math.js" ></script>	
+
 ##Le random
 La fonction initiale ‘Math.random()’ retourne exclusivement un chiffre compris entre 0 et 1. Voici quelques ajouts supplémentaires :
 
@@ -14,13 +17,11 @@ La fonction initiale ‘Math.random()’ retourne exclusivement un chiffre compr
 	Math.random(array)
 	//Retourne une valeur piochée aléatoirement dans le tableau.
 
-
 ##La distance et direction
 Calculer l’angle, la distance entre deux points ou encore le coefficient directeur :
 
 	Math.distance(x1, y1, x2, y2)
 	//Cacule la distance entre les deux points.
-
 
 	Math.direction(x1, x2)
 	//Calcule le coefficient directeur entre ces deux points.
@@ -34,27 +35,25 @@ Calculer l’angle, la distance entre deux points ou encore le coefficient direc
 	Math.degreeToRad()
 	//Convertis une valeur initialement en degré en radian.
 
-
-
-
 ##Cordonné polaire
 Caculer la position d’un point en fonction de ses coordonnées polaires peut se révéler pratique. Voici donc une série de fonctions qui facilite cette méthode :
 
+1. Initialement le point d’origine se trouve en (0,0) soit dans le coin supérieur gauche de l’écran. Si vous souhaitez modifier la position du point d’origine pour les coordonnées polaire, vous pouvez le faire grâce à cette fonction :
 	Math.radial.changeOrigin(x, y)
-	//Initialement le point d’origine se trouve en (0,0) soi dans le coin supérieur gauche de l’écran. Si vous souhaitez modifier la position du point d’origine pour les coordonnées polaire, vous pouvez le faire grâce à cette fonction. Le changement s’applique sur toutes les fonctions ci-dessous.
 
+2. Convertis des coordonnées polaires (angle, rayon) en coordonnées cartésiennes (x, y).
 	Math.radial.toXY(rayon, angle)
-	//Convertis des coordonnées polaires (angle, rayon) en coordonnées cartésiennes (x, y). La fonction retourne un objet du type :
 
+La fonction retourne un objet du type : */
 	{
 		x:number,
 		y:number
 	}
 
-
+3. Convertis des coordonnées cartésiennes (x, y) en coordonnées polaires (angle, rayon). 
 	Math.radial.toPolar(x,y)
-	//Convertis des coordonnées cartésiennes (x, y) en coordonnées polaires (angle, rayon). La fonction retourne un objet du type :
 
+La fonction retourne un objet du type :
 	{
 		r:number,
 		a:number
