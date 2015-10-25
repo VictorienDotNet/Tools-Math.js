@@ -51,5 +51,5 @@ Il est aussi possible de convertis des coordonnées polaires (angle, rayon) en c
 
 	Math.radial.toPolar(x,y)
 	//coordonnées cartésiennes vers coordonnées polaire
-	////retourne un objet du type {x:number, y:number}
+	//retourne un objet du type {x:number, y:number}
 	
