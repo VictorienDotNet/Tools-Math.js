@@ -36,6 +36,8 @@ Calculer l’angle, la distance entre deux points ou encore le coefficient direc
 	//Convertis une valeur initialement en degré en radian.
 
 ##Cordonné polaire
+
+[Exemple 1](http://link.victorien.net/math/example-radial-1/) [Exemple 2](http://link.victorien.net/math/example-radial-2/)
 Caculer la position d’un point en fonction de ses coordonnées polaires peut se révéler pratique. Voici donc une série de fonctions qui facilite cette méthode :
 
 Initialement le point d’origine se trouve en (0,0) soit dans le coin supérieur gauche de l’écran. Si vous souhaitez modifier la position du point d’origine pour les coordonnées polaire, vous pouvez le faire grâce à cette fonction :

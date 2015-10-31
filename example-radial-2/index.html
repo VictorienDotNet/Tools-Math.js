@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name = "viewport" content = "initial-scale = 1, user-scalable = no, width = device-width">
+
+	<title>Math.radial</title>
+
+
+	<!-- fichier online jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<!-- Des petites fonctions utiles -->
+	<script src="http://link.victorien.net/support.js"></script>
+
+	<!-- fichiers online Math-->
+	<script src="http://link.victorien.net/math.js"></script>
+
+	<!-- fichier online formatage CSS -->
+	<link href="http://link.victorien.net/sheets/reset.css" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,700,300' rel='stylesheet' type='text/css'>
+
+	<!-- Github -->
+	<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+
+	<!-- fichiers locales -->
+	<script src="main.js" ></script>
+	<link href="main.css" rel="stylesheet" type="text/css">
+
+
+
+</head>
+<body>
+	<header>
+		<h1>Exemple : Math.radial</h1>
+		<a href="http://link.victorien.net/math/example-radial-1">Example 1</a>
+		<a >Example 2</a>
+	</header>
+	<svg>
+			<circle id="sun" cx="400" cy="400" r="15" />
+			<circle id="mercure" cx="250" cy="250" r="2" data-rayon="30" data-vitesse="1.5"/>
+			<circle id="venus" cx="250" cy="250" r="3" data-rayon="60" data-vitesse="1.7"/>
+			<circle id="earth" cx="250" cy="250" r="4" data-rayon="100" data-vitesse="1"/>
+			<circle id="moon" cx="250" cy="250" r="1" data-rayon="10" data-vitesse="4" data-satelliteto="#earth"/>
+			<circle id="mars" cx="250" cy="250" r="3" data-rayon="150" data-vitesse="1.2"/>
+			<circle id="jupiter" cx="250" cy="250" r="9" data-rayon="170" data-vitesse="0.7"/>
+			<circle id="jupiter-mon" cx="250" cy="250" r="3" data-rayon="30" data-vitesse="1" data-satelliteto="#jupiter"/>
+			<circle id="jupiter-mon-mon" cx="250" cy="250" r="1" data-rayon="10" data-vitesse="1" data-satelliteto="#jupiter-mon"/>
+			<circle id="saturne" cx="250" cy="250" r="8" data-rayon="245" data-vitesse="0.75"/>
+			<circle id="uranus" cx="250" cy="250" r="3" data-rayon="275" data-vitesse="0.6"/>
+			<circle id="neptune-center" cx="250" cy="250" r="0" data-rayon="300" data-vitesse="0.1"/>
+			<circle id="neptune-1" cx="250" cy="250" r="3" data-rayon="10" data-vitesse="1" data-satelliteto="#neptune-center"/>
+			<circle id="neptune-1" cx="250" cy="250" r="3" data-rayon="10" data-vitesse="1" data-satelliteto="#neptune-center" data-angle="180"/>
+
+	</svg>
+	<div class="info">
+		<a class="github-button" href="https://github.com/VictorienDotNet/Tools-Math" data-style="mega" >Voir la documentation</a>
+		<a class="github-button" href="https://github.com/VictorienDotNet/Tools-Math.js/archive/master.zip" data-icon="octicon-cloud-download" data-style="mega" aria-label="Download VictorienDotNet/Tools-Math.js on GitHub">Télécharger</a>
+	</div>
+</body>
+</html>
